@@ -1,0 +1,12 @@
+language: python
+before_script:
+  - mysql -e 'create database testdb;'
+  - psql -c 'create database testdb;' -U postgres
+python:
+  - "2.7"
+# command to install dependencies
+install: 
+    - "pip install -r test-req.pip --use-mirrors"
+    - "python setup.py develop"
+# command to run tests
+script: nosetests -v

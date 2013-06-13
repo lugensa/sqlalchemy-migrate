@@ -1,3 +1,9 @@
+sqlalchemy-migrate
+==================
+
+Fork from http://code.google.com/p/sqlalchemy-migrate/ to get it working with
+SQLAlchemy 0.8.
+
 Inspired by Ruby on Rails' migrations, Migrate provides a way to deal with
 database schema changes in `SQLAlchemy <http://sqlalchemy.org>`_ projects.
 
@@ -6,7 +12,7 @@ database change repository mechanism which can be used from the command line as
 well as from inside python code.
 
 Help
-------
+----
 
 Sphinx documentation is available at the project page `packages.python.org
 <http://packages.python.org/sqlalchemy-migrate/>`_.
@@ -28,7 +34,7 @@ You can also clone a current `development version
 project's `mercurial <http://mercurial.selenic.com/>`_ trunk.
 
 Tests and Bugs
-------------------
+--------------
 
 To run automated tests:
 
