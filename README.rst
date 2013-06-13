@@ -1,6 +1,9 @@
 sqlalchemy-migrate
 ==================
 
+.. image:: https://api.travis-ci.org/lugensa/sqlalchemy-migrate.png?branch=master  
+         :target: https://travis-ci.org/lugensa/sqlalchemy-migrate
+
 Fork from http://code.google.com/p/sqlalchemy-migrate/ to get it working with
 SQLAlchemy 0.8.
 
