@@ -5,7 +5,9 @@ sqlalchemy-migrate
          :target: https://travis-ci.org/lugensa/sqlalchemy-migrate
 
 Fork from http://code.google.com/p/sqlalchemy-migrate/ to get it working with
-SQLAlchemy 0.8.
+SQLAlchemy 0.8. Tests are just running for ``Postgres`` and ``Sqlite``. Feel
+free to send a pull request to get it running under ``Mysql``. Esoteric DB's
+like ``Firebird`` and ``Oracle`` are not tested ;).
 
 Inspired by Ruby on Rails' migrations, Migrate provides a way to deal with
 database schema changes in `SQLAlchemy <http://sqlalchemy.org>`_ projects.

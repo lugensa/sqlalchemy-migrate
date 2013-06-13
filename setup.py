@@ -9,20 +9,31 @@ except ImportError:
     use_setuptools()
     from setuptools import setup, find_packages
 
-required_deps = ['SQLAlchemy >= 0.6', 'decorator', 'Tempita >= 0.4', 'setuptools']
+
+def read(*rnames):
+    return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
+
+required_deps = ['SQLAlchemy >= 0.6',
+                 'decorator', 'Tempita >= 0.4', 'setuptools']
 readme_file = open(os.path.join(os.path.dirname(os.path.abspath(__file__)),
                                 'README.rst'))
 
 setup(
-    name = "sqlalchemy-migrate",
-    version = "0.7.3",
-    packages = find_packages(exclude=["migrate.tests*"]),
-    include_package_data = True,
-    description = "Database schema migration for SQLAlchemy",
-    long_description = readme_file.read(),
+    name="sqlalchemy-migrate",
+    version="0.8.0",
+    packages=find_packages(exclude=["migrate.tests*"]),
+    include_package_data=True,
+    description="Database schema migration for SQLAlchemy",
+    long_description=(read('README.rst')
+                      + '\n\n' +
+                        'Detailed Documentation\n'
+                        '**********************'
+                        + '\n\n' +
+                        read('CHANGES.txt')
+                      ),
     install_requires = required_deps,
     extras_require = {
-        'docs' : ['sphinx >= 0.5'],
+        'docs': ['sphinx >= 0.5'],
     },
     author = "Evan Rosson",
     author_email = "evan.rosson@gmail.com",

@@ -1,0 +1,10 @@
+=======
+Changes
+=======
+
+0.8.0 (unreleased)
+------------------
+
+- Fixed tests for sqlite and potgres under sqlalchemy 0.8.
+
+- Added Travis ci. [jod]
