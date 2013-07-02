@@ -2,8 +2,8 @@
 Changes
 =======
 
-0.8.0 (unreleased)
-------------------
+0.8.0lu (2013-07-02)
+--------------------
 
 - Fixed tests for sqlite and potgres under sqlalchemy 0.8.
 
